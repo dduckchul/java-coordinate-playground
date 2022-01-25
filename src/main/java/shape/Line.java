@@ -3,6 +3,7 @@ package shape;
 import java.awt.*;
 
 public class Line extends Shape implements IfShape{
+	public static int POINT_SIZE = 2;
 
 	public Line(CoordinatePoint a, CoordinatePoint b){
 		this.points.add(a);

@@ -7,6 +7,7 @@ import java.awt.*;
 public class CoordinatePoint {
 	private final static int VALIDATE_POINT_VALUE_LENGTH = 2;
 	private final static int VALIDATE_POINT_VALUE_MAXIMUM = 24;
+	private final static String COORDINATE_STRING_SPLITTER = ",";
 	private final Point point;
 
 	public CoordinatePoint(String coordinateString){
@@ -19,11 +20,11 @@ public class CoordinatePoint {
 			throw new IllegalArgumentException(WRONG_STRING_INPUT);
 		}
 
-		if(!coordinateString.contains(",")){
+		if(!coordinateString.contains(COORDINATE_STRING_SPLITTER)){
 			throw new IllegalArgumentException(WRONG_STRING_SPLITTER);
 		}
 
-		String [] values = coordinateString.split(",");
+		String [] values = coordinateString.split(COORDINATE_STRING_SPLITTER);
 
 		if(values.length != VALIDATE_POINT_VALUE_LENGTH){
 			throw new IllegalArgumentException(WRONG_STRING_INPUT);

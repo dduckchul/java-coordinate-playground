@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Shape {
+
 	protected List<CoordinatePoint> points;
 
 	protected Shape(){
