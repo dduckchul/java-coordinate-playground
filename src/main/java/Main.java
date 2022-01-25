@@ -9,5 +9,7 @@ public class Main {
 	public static void main(String [] args) {
 		List<CoordinatePoint> points = InputView.inputString();
 		Shape shape = ShapeUtil.parseShape(points);
+		shape.draw();
+		shape.calculate();
 	}
 }

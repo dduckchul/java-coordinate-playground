@@ -1,8 +1,6 @@
 package shape;
 
-import java.awt.*;
-
-public class Line extends Shape implements IfShape{
+public class Line extends Shape{
 	public static int POINT_SIZE = 2;
 
 	public Line(CoordinatePoint a, CoordinatePoint b){

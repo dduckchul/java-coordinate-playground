@@ -1,6 +1,6 @@
 package shape;
 
-public class Triangle extends Shape implements IfShape{
+public class Triangle extends Shape{
 	public static int POINT_SIZE = 3;
 
 	public Triangle(CoordinatePoint a, CoordinatePoint b, CoordinatePoint c){

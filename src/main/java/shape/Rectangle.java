@@ -1,6 +1,6 @@
 package shape;
 
-public class Rectangle extends Shape implements IfShape{
+public class Rectangle extends Shape{
 	public static int POINT_SIZE = 4;
 
 	public Rectangle(CoordinatePoint a, CoordinatePoint b, CoordinatePoint c, CoordinatePoint d){

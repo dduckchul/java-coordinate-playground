@@ -3,7 +3,7 @@ package shape;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Shape {
+public abstract class Shape implements IfShape{
 
 	protected List<CoordinatePoint> points;
 
