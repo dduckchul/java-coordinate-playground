@@ -6,7 +6,7 @@ import java.util.List;
 public abstract class Shape {
 	protected List<CoordinatePoint> points;
 
-	public Shape(){
+	protected Shape(){
 		this.points = new ArrayList<>();
 	}
 
